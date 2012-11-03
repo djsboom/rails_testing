@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
  
   def index
-    @message1 = "i like text"
+    @message1 = RUBY_VERSION
   end
  
 end
