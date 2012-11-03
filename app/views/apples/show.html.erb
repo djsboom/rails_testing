@@ -1,0 +1,8 @@
+<h1>Apple <%= @apple.id %></h1>
+ 
+<p>Name: <%= @apple.name %></p>
+<p>Tasty: <%= @apple.tasty? %></p>
+
+<% if @apple.tasty? %>
+  <%= link_to 'Rot this apple', rot_apple_path %>
+<% end %>
