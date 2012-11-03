@@ -48,7 +48,7 @@ Project1::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
@@ -59,5 +59,6 @@ get 'test_page' => 'test#index'
 get 'apples/:id' => 'apples#show'
 match 'plural' => 'plural#show'
 get 'apples/rot/:id' => 'apples#rot', :as => 'rot_apple'
+match 'palindrome' => 'palindrome#show'
 end
 
