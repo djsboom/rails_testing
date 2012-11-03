@@ -1,4 +1,4 @@
-rails_testing
-=============
+rails_test
+==========
 
-learning rails
+rails testing lol
