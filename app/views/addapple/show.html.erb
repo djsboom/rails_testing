@@ -1,6 +1,6 @@
 <html>
 <h1>Add a apple to the database</h1>
-<form name="input">
+<form name="input" method=POST>
 Name of Apple: <input type="text" name="applename"><br>
 <u>Is it a tasty apple?</u><br>
 <input type="radio" name="tasty" value="true">It's tasty<br>
@@ -10,5 +10,11 @@ Name of Apple: <input type="text" name="applename"><br>
 
 <input type="submit" value="Add Apple!">
 </form>
-<p><%= @apple_info %></p>
+<p>
+<% if @apple_id == nil %>
+ 
+<% else %>
+You can find your generated apple <a href="http://mc.lambdan.com/apples/<%= @apple_id %>">here</a>
+<% end %>
+</p>
 </html>

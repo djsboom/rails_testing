@@ -61,5 +61,10 @@ match 'plural' => 'plural#show'
 get 'apples/rot/:id' => 'apples#rot', :as => 'rot_apple'
 match 'palindrome' => 'palindrome#show'
 match 'addapple' => 'addapple#show'
+get 'blog/:id' => 'blog#show'
+match 'addblog' => 'addblog#show'
+get 'shop/:id' => 'shop#show'
+match 'addshop' => 'addshop#show'
+match 'addorder' => 'addorder#show'
 end
 

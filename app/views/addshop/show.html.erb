@@ -1,0 +1,16 @@
+<html>
+<h1>Lägg till ett objekt i databasen</h1>
+<form name="input" method=POST>
+Produktnamn: <input type="text" name="name"><br>
+<br>
+Bildlänk: <input type="text" name="img"><br>
+Hur många finns i lager (nummer endast): <input type="text" name="stock"><br>
+Önskat pris: <input type="text" name="price"><br>
+<textarea name="desc" cols="40" rows="5">
+Objekt beskivning här...
+</textarea><br><br>
+Bekräfta med lösenord: <input type="password" name="password">
+<input type="submit" value="Spara">
+</form>
+<p><%= @apple_info %></p>
+</html>

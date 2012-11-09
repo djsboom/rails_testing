@@ -1,6 +1,7 @@
 class AddappleController < ApplicationController
 
 def show
+	@page_title = "Add a apple!"
     @id = params[:applename]
     @id_tasty = params[:tasty]
     if @id == nil
@@ -11,9 +12,10 @@ def show
 			a.tasty = @id_tasty
 			a.name = @id
 			a.save
+			@apple_id = a.id
 		
 		# show stuff
-			@apple_info = @id +  ", tasty = " + @id_tasty
+			@apple_info = " hi"
     end
 end
 

@@ -10,11 +10,54 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121102160045) do
+ActiveRecord::Schema.define(:version => 20121109210201) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "password"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "apples", :force => true do |t|
     t.string   "name"
     t.boolean  "tasty"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "blogs", :force => true do |t|
+    t.string   "name"
+    t.string   "date"
+    t.string   "entry"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "items", :force => true do |t|
+    t.string   "name"
+    t.integer  "price"
+    t.integer  "stock"
+    t.string   "desc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "orders", :force => true do |t|
+    t.string   "name"
+    t.integer  "price"
+    t.string   "address"
+    t.integer  "postnr"
+    t.string   "postort"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "shops", :force => true do |t|
+    t.string   "name"
+    t.string   "img"
+    t.string   "desc"
+    t.integer  "price"
+    t.integer  "stock"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
